@@ -51,6 +51,16 @@ RCT_EXPORT_MODULE();
         [items setObject: attrURL forKey: @"com.instagram.sharedSticker.contentURL"];
     }
 
+    if(![options[@"linkUrl"] isEqual:[NSNull null]] && options[@"linkUrl"] != nil) {
+        NSString *attrURL = [RCTConvert NSString:options[@"linkUrl"]];
+        [items setObject: attrURL forKey: @"com.instagram.sharedSticker.linkUrl"];
+    }
+
+    if(![options[@"linkText"] isEqual:[NSNull null]] && options[@"linkText"] != nil) {
+        NSString *attrURL = [RCTConvert NSString:options[@"linkText"]];
+        [items setObject: attrURL forKey: @"com.instagram.sharedSticker.linkText"];
+    }
+
     NSString *backgroundTopColor;
      if(![options[@"backgroundTopColor"] isEqual:[NSNull null]] && options[@"backgroundTopColor"] != nil) {
         backgroundTopColor = [RCTConvert NSString:options[@"backgroundTopColor"]];
