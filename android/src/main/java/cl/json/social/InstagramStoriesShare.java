@@ -70,6 +70,14 @@ public class InstagramStoriesShare extends SingleShareIntent {
             this.intent.putExtra("content_url", options.getString("attributionURL"));
         }
 
+        if (this.hasValidKey("linkUrl", options)) {
+            this.intent.putExtra("link_url", options.getString("linkUrl"));
+        }
+
+        if (this.hasValidKey("linkText", options)) {
+            this.intent.putExtra("link_text", options.getString("linkText"));
+        }
+
         if (this.hasValidKey("backgroundTopColor", options)) {
             this.intent.putExtra("top_background_color", options.getString("backgroundTopColor"));
         }
