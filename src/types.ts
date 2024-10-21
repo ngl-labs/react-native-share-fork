@@ -71,6 +71,8 @@ interface BaseSocialStoriesShareSingleOptions extends Omit<BaseShareSingleOption
   backgroundBottomColor?: string;
   backgroundTopColor?: string;
   attributionURL?: string;
+  linkUrl?: string;
+  linkText?: string;
   backgroundVideo?: string;
 }
 
