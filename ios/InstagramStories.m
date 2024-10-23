@@ -53,7 +53,7 @@ RCT_EXPORT_MODULE();
 
     if(![options[@"linkUrl"] isEqual:[NSNull null]] && options[@"linkUrl"] != nil) {
         NSString *attrURL = [RCTConvert NSString:options[@"linkUrl"]];
-        [items setObject: attrURL forKey: @"com.instagram.sharedSticker.linkUrl"];
+        [items setObject: attrURL forKey: @"com.instagram.sharedSticker.linkURL"];
     }
 
     if(![options[@"linkText"] isEqual:[NSNull null]] && options[@"linkText"] != nil) {
